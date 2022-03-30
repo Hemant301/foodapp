@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/modal/homemodal.dart';
 
 class RestoWithOffer extends StatelessWidget {
-  const RestoWithOffer({Key? key}) : super(key: key);
-
+  RestoWithOffer({Key? key, this.data}) : super(key: key);
+  RestuarantdataModal? data;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -38,7 +39,7 @@ class RestoWithOffer extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Patel's Puff House",
+                      data!.rest_title!,
                       style: TextStyle(
                           // letterSpacing: 1,
                           fontSize: 14,
@@ -49,7 +50,7 @@ class RestoWithOffer extends StatelessWidget {
                       height: 3,
                     ),
                     Text(
-                      "Fast Food\nSarthana | 1301.21Kms",
+                      data!.rest_full_address!,
                       style: TextStyle(
                         // letterSpacing: 1,
                         fontSize: 12,
@@ -64,7 +65,7 @@ class RestoWithOffer extends StatelessWidget {
                       children: [
                         Icon(Icons.star_border_outlined),
                         Text(
-                          "5 - 24 mins - & 400 for two",
+                          "${data!.rest_rating!} - ${data!.rest_deliverytime!} mins - &${data!.rest_costfortwo!} for two",
                           style: TextStyle(
                             // letterSpacing: 1,
                             fontSize: 12,

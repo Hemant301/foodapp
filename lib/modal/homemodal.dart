@@ -17,7 +17,7 @@ class HomedataModal {
   MainDataModal? maindata;
   String? wallet;
   List<RestuarantdataModal> restuarant_data = [];
-  List<PopularrestuarantModal> popular_restuarant = [];
+  List<RestuarantdataModal> popular_restuarant = [];
   HomedataModal(js) {
     for (var i = 0; i < js['Banner'].length; i++) {
       banner.add(BannerModal(js['Banner'][i]));
@@ -31,8 +31,7 @@ class HomedataModal {
       restuarant_data.add(RestuarantdataModal(js['restuarant_data'][i]));
     }
     for (var i = 0; i < js['popular_restuarant'].length; i++) {
-      popular_restuarant
-          .add(PopularrestuarantModal(js['popular_restuarant'][i]));
+      popular_restuarant.add(RestuarantdataModal(js['popular_restuarant'][i]));
     }
   }
 }
@@ -142,6 +141,6 @@ class RestuarantdataModal {
   }
 }
 
-class PopularrestuarantModal {
-  PopularrestuarantModal(js) {}
-}
+// class PopularrestuarantModal {
+//   PopularrestuarantModal(js) {}
+// }
