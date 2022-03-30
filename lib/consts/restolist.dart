@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/consts/constants.dart';
 import 'package:foodapp/modal/homemodal.dart';
 
 class RestoWithOffer extends StatelessWidget {
@@ -24,7 +25,7 @@ class RestoWithOffer extends StatelessWidget {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10)),
                         child: Image.network(
-                          "https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg?w=740",
+                          "${base}${data!.rest_img!}",
                           fit: BoxFit.cover,
                         ),
                       ),

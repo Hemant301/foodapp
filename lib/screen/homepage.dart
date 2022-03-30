@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/bloc/homebloc.dart';
+import 'package:foodapp/consts/constants.dart';
 import 'package:foodapp/consts/restolist.dart';
 import 'package:foodapp/modal/homemodal.dart';
 
@@ -87,8 +88,8 @@ class HomePage extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(5),
                                       image: DecorationImage(
                                           image: NetworkImage(
-                                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdkYx8x8WdvLgoJTLvDeYSzZsV3ikCbUU3aw&usqp=CAU"),
-                                          fit: BoxFit.cover),
+                                              '${base}${snapshot.data!.homedata!.banner[index].img!}'),
+                                          fit: BoxFit.fill),
                                       color: Colors.orange,
                                       // border: Border.all(color: Colors.blue, width: 1),
                                       boxShadow: [
@@ -134,7 +135,7 @@ class HomePage extends StatelessWidget {
                                     child: Padding(
                                       padding: const EdgeInsets.all(12.0),
                                       child: Image.network(
-                                        "https://images.news18.com/ibnlive/uploads/2021/10/world-food-day-16342951394x3.jpg",
+                                        '${base}${snapshot.data!.homedata!.categorylist[index].cat_img}',
                                         height: 80,
                                         width: 80,
                                         fit: BoxFit.cover,
@@ -194,7 +195,7 @@ class HomePage extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(5),
                                       image: DecorationImage(
                                           image: NetworkImage(
-                                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdkYx8x8WdvLgoJTLvDeYSzZsV3ikCbUU3aw&usqp=CAU"),
+                                              '${base}${snapshot.data!.homedata!.popular_restuarant[index].rest_img}'),
                                           fit: BoxFit.cover),
                                       color: Colors.orange,
                                       // border: Border.all(color: Colors.blue, width: 1),

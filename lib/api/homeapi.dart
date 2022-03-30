@@ -8,7 +8,7 @@ class HomeApi {
   Future<dynamic> fetchHomedata() async {
     try {
       final response = await client.post(
-          Uri.parse("https://apps.servezilla.in/eapi/e_home_data.php"),
+          Uri.parse("${base}eapi/e_home_data.php"),
           headers: {'Content-type': "application/json"},
           body: jsonEncode(
               {"uid": "1", "lats": "23.305447", "longs": "85.3096"}));
