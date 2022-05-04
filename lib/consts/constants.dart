@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-String base = "https://apps.servezilla.in/eapi/";
+String base = "https://apps.servezilla.in/";
 
 String font = "sans";
 const Color primary = Color(0xfff9ba49);

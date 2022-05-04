@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
           "/restoDiscription": (context) => RestoDiscription(),
           "/CatgoryPage": (context) => CatgoryPage(),
           // "/mapshome": (context) => PincodePage()
-          "/trial": (context) => MapFunction(),
+          // "/trial": (context) => MapFunction(),
         });
   }
 }
