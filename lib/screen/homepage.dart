@@ -270,7 +270,11 @@ class HomePage extends StatelessWidget {
                           children: [
                             Row(
                               children: [
-                                Icon(Icons.youtube_searched_for),
+                                Icon(
+                                  Icons.check_box,
+                                  size: 30,
+                                  color: Colors.red,
+                                ),
                                 Container(
                                   width: 85,
                                   child: Text(
@@ -287,7 +291,11 @@ class HomePage extends StatelessWidget {
                             ),
                             Row(
                               children: [
-                                Icon(Icons.youtube_searched_for),
+                                Icon(
+                                  Icons.check_box,
+                                  size: 30,
+                                  color: Colors.red,
+                                ),
                                 Container(
                                   width: 60,
                                   child: Text(
@@ -304,7 +312,11 @@ class HomePage extends StatelessWidget {
                             ),
                             Row(
                               children: [
-                                Icon(Icons.youtube_searched_for),
+                                Icon(
+                                  Icons.check_box,
+                                  size: 30,
+                                  color: Colors.red,
+                                ),
                                 Container(
                                   width: 60,
                                   child: Text(
@@ -364,7 +376,7 @@ class HomePage extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Desing & Develop by\nXYZ",
+                              "Desing & Develop by\nHemant Kumar",
                               style: TextStyle(
                                   // letterSpacing: 1,
                                   fontSize: 12,
